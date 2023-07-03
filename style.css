@@ -4,6 +4,22 @@
     padding: 0;
 }
 
+@keyframes redLight {
+    0%, 58.33%, 100% { opacity: 0.3; }
+    58.34%, 100% { opacity: 1; }
+}
+
+@keyframes yellowLight {
+    0%, 41.66%, 58.33%, 100% { opacity: 0.3; }
+    41.67%, 58.33% { opacity: 1; }
+}
+
+@keyframes greenLight {
+    0%, 41.66% { opacity: 1; }
+    41.67%, 100% { opacity: 0.3; }
+}
+
+
 body{
     display: flex;
     justify-content: center;
@@ -40,16 +56,21 @@ body{
     width: 50px;
     border-radius: 100px;
     background: rgb(255, 0, 0);
+    animation: redLight 22s linear infinite;
+
 }
 .yellow{
     height: 50px;
     width: 50px;
     border-radius: 100px;
     background: rgb(255, 255, 0);
+    animation: yellowLight 22s linear infinite;
+
 }
 .green{
     height: 50px;
     width: 50px;
     border-radius: 100px;
     background: rgb(0, 255, 0);
+    animation: greenLight 22s linear infinite;
 }
