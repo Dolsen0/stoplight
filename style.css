@@ -26,6 +26,42 @@ body{
     align-items: center;
 }
 
+body.daytime {
+    background: linear-gradient(
+        to bottom,
+        hsl(210, 60%, 70%),
+        hsl(0, 0%, 90%), 
+        hsl(30, 30%, 60%) 
+    );
+}
+
+body.beach {
+    background: linear-gradient(
+        to bottom,
+        hsl(210, 60%, 70%),
+        hsl(200, 70%, 50%), 
+        hsl(28, 75%, 65%) 
+    );
+}
+
+body.forest {
+    background: linear-gradient(
+        to bottom,
+        hsl(120, 50%, 70%), 
+        hsl(30, 30%, 60%),  
+        hsl(120, 60%, 30%)  
+    );
+}
+
+body.nighttime {
+    background: linear-gradient(
+        to bottom,
+        hsl(240, 90%, 50%),
+        hsl(0, 0%, 0%),     
+        hsl(0, 0%, 20%)      
+    );
+}
+
 .container{
     width: 100%;
     height: 100vh;
