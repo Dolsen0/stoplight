@@ -1,0 +1,55 @@
+*, *::before,*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stoplight{
+    height: 300px;
+    width: 95.0px;
+    background: rgb(56, 52, 52);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid grey;
+}
+
+.stoplight div {
+    margin: 20px;
+    border: 2px solid grey;
+    }
+
+.red{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background: rgb(255, 0, 0);
+}
+.yellow{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background: rgb(255, 255, 0);
+}
+.green{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background: rgb(0, 255, 0);
+}
